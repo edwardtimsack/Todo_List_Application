@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(./pexels-ann-poan-5797899.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+    background: linear-gradient(to right, #00AAFF, #00FF6C);
+
+}
+header{
+    /* background: linear-gradient(to right, #00AAFF, #00FF6C); */
+    background-size: 100%;
+    /* background-image: url(./microphone-298587__480.jpg); */
+
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px 20px;
+}
+.todos-wrapper{
+    padding: 20px;
+}
+#todos{
+    background-color: white;
+    list-style: none;
+}
+.todos-item{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border: 3px solid rgb(221, 221, 221);
+}
+#todo{
+    font-size: 25px;
+    border: 2px solid #dddddd;
+	padding: 10px;
+}
+.complete-todo,
+.delete-todo,
+.search-logo {
+    cursor: pointer;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.search-container {
+	display: flex;
+	padding-bottom: 10px;
+}
+.search-container .search-box {
+	border: 5px solid #dddddd;
+	font-size: 15px;
+	/* padding: 5px; */
+	width: 25em;
+}
+
+.todos-item.completed {
+	cursor: not-allowed;
+	background-color: #f1f0f0;
+}
+
+.todos-item.completed .todo-text {
+	color: #f80808;
+    text-decoration: overline;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) {
+    h1{
+        justify-content: center;
+    }
+	header {
+		padding: 40px 20px;
+        justify-content: space-evenly;
+	}
+    #todo{
+        /* width: 100px; */
+        font-size: 10px;
+        display: block;
+    }
+
+	.todos-container {
+		padding: 20px 20px;
+	}
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 768px) {
+	header {
+		padding: 40px 150px;
+	}
+
+	.todos-container {
+		padding: 20px 150px;
+	}
+}
+/* main{
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+} */
+/* header{
+    width: 60%;
+    background-color: thistle; */
+/* }
+.todos-container{
+    width: 40%;
+    background-color: black;
+    
+}
+.todos-container h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.todos-container input{ */
+    /* text-align: center; */
+    /* margin-left: 20px;
+    margin-top: 20px;
+    width: 22rem;
+    border: none;
+
+    background-color: white;
+}
+.search-container{
+    background-color: salmon;
+    margin-top: 20px;
+    height: 10%;
+}
+.search-container input{
+    margin-left: 18rem;
+    width: 12rem;
+    border: none;
+}
+.search-container i{
+    color: white;
+}
+.todo-item{
+    background-color: antiquewhite;
+    border: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+.complete-todo{
+    justify-content: space-evenly;
+    margin-right: 15px;
+    color: white;
+    background-color: rgb(12, 17, 4);
+}
+.todo-actions{
+ 
+}
+.delete-todo{
+    color: white; */
+    /* margin-left: 30px; */
+    /* align-items: center;
+    align-content: center;
+    background-color: red;
+    justify-content: space-around;
+} */
