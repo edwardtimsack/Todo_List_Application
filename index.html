@@ -2,67 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todos Application</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-   <main>
-    <h1>My Todos</h1>
-    <header>
-        <input id="todo" type="text" placeholder="   Add new Todos...">
-    </header>
-    <section class="todos-wrapper">
-        <section class="search-container">
-            <input
-                type="text"
-                class="search-box"
-                placeholder="  Search for recent Todos?"
-            >
-            <span class="search-logo">🔎</span>
-        </section> 
+    <div class="container">
+        <h1>Todo List</h1>
+        <input type="text" id="search" placeholder="Search for recent Todos...">
 
-        <ol id="todos">
-            <li class="todos-item">
-                <span class="todo-text">Sleep </span>
-                <span class="todo-actions">
-                    <span class="complete-todo">✅</span>
-                    <span class="delete-todo">❌</span>
-                </span>
-            </li>
-            <li class="todos-item">
-                <span class="todo-text">Eat </span>
-                <span class="todo-actions">
-                    <span class="complete-todo">✅</span>
-                    <span class="delete-todo">❌</span>
-                </span>
-            </li>
-            <li class="todos-item">
-                <span class="todo-text">Code </span>
-                <span class="todo-actions">
-                    <span class="complete-todo">✅</span>
-                    <span class="delete-todo">❌</span>
-                </span>
-            </li>
-            <li class="todos-item">
-                <span class="todo-text">Basketball </span>
-                <span class="todo-actions">
-                    <span class="complete-todo">✅</span>
-                    <span class="delete-todo">❌</span>
-                </span>
-            </li>
-            <li class="todos-item">
-                <span class="todo-text">Exercise </span>
-                <span class="todo-actions">
-                    <span class="complete-todo">✅</span>
-                    <span class="delete-todo">❌</span>
-                </span>
-            </li>
-        </ol>
-    </section> 
-   </main>
-    <script src="./app.js"></script>
+
+        <ul id="todo-list"></ul>
+        
+        <input type="text" id="new-todo" placeholder="Add a new todo">
+        <button id="add-todo">Add</button>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
