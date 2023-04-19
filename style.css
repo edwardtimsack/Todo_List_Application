@@ -7,7 +7,6 @@
 
 }
 body{
-    /* background-image: url(./); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: black;
@@ -50,8 +49,8 @@ body{
     margin-top: 20px;
   }
   #add-todo{
-    background: red;
-    color: white;
+    color: black;
+    background-color: white;
     font-size: 15px;
     border: none;
     outline: none;
@@ -59,19 +58,29 @@ body{
     border-radius: 40px;
     cursor: pointer;
     margin: 15px;
+    font-weight: 50px;
+    
   }
   #add-todo:hover{
-    background-color: white;
-    color: red;
+    color: white;
+    background: linear-gradient(135deg, #171716, #5c9e0b);
   }
   input{
     border: none;
     background: transparent;
-    /* background-color: antiquewhite; */
     padding: 10px;
     outline: none;
     color: antiquewhite;
-    cursor: pointer;
     margin: 15px;
-    font-size: 12px;
+    font-size: 15px;
+  }
+  button{
+    padding: 10px 10px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+    background-color: red;
+    border: none;
+    text-align: center;
+
   }
